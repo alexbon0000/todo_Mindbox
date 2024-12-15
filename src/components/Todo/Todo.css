@@ -1,0 +1,93 @@
+.todo-box {
+    width: 50%;
+    height: 50%;
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .add-task-box {
+        width: 100%;
+        height: 50px;
+        padding: 10px 10px 0 10px;
+        display: flex;
+        align-items: flex-end;
+        justify-content: center;
+        border-bottom: 2px solid rgb(211, 211, 211);
+    }
+    .add-input {
+        width: 100%;
+        height: 30px;
+        padding-left: 5px;
+        padding-right: 5px;
+        font-size: 18px;
+        border: none;
+    }
+    .add-input:focus-visible {
+        outline: none;
+    }
+
+    .add-btn-box {
+        height: 100%;
+        display: flex;
+        justify-content: center;
+    }
+    .btn {
+        height: 30px;
+        padding: 5px;
+        border: 1px solid black;
+        border-radius: 10px;
+        background-color: white;
+        transition: 0.3s;
+        cursor: pointer;
+    }
+    .btn:hover {
+        background-color: rgb(238, 238, 238);
+        transition: 0.3s;
+    }
+    .delete-btn:hover {
+        color: rgb(255, 87, 87);
+    }
+    .active-btn {
+        background-color: chartreuse;
+    }
+
+    .task-list {
+        height: 70%;
+        overflow: auto;
+        li {
+            list-style-position: inside;
+            font-size: 16px;
+            padding: 10px;
+            border-bottom: 1px solid rgb(211, 211, 211);
+            cursor: pointer;
+            transition: 0.3s;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        li:hover {
+            background-color: rgb(238, 238, 238);
+            transition: 0.3s;
+        }
+        .complited {
+            .task-title {
+                text-decoration: line-through;
+                color: rgb(76, 161, 76);
+            }
+        }
+    }
+    .list-empty {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .filter-box {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        gap: 5px;
+    }
+}
